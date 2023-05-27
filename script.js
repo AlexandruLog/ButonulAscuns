@@ -1,6 +1,6 @@
 //setting all buttons as "losers";
 for (let i = 0; i < 3; ++i) {
-  document.getElementsByClassName("btn")[i].value = "Looser";
+  document.getElementsByClassName("btn")[i].value = "Loser";
 }
 //setting a random button as "winner";
 document.getElementsByClassName("btn")[Math.floor(Math.random() * 3)].value = "Winner";
@@ -17,7 +17,7 @@ function generateBtn() {
   const userInput = document.getElementById("noOfButtonsToGenerate").value;
   for (let i = 0; i < userInput; ++i) {
     const newButton = document.createElement("button");
-    newButton.value = "Looser";
+    newButton.value = "Loser";
     newButton.textContent = "Button " + (i + 1);
     newButton.className = "new-btn";
     newButton.setAttribute("onclick", "checkNewBtn(" + `${i}` + ")");
