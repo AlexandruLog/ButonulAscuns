@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butonul Ascuns</title>
+    <link rel="shortcut icon" type="icon/png" href="./assets/medal.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="first-part">
+      <button class="btn" onclick="checkBtn(0)">Button 1</button>
+      <button class="btn" onclick="checkBtn(1)">Button 2</button>
+      <button class="btn" onclick="checkBtn(2)">Button 3</button>
+      <p id="first-part-status"></p>
+    </div>
+    <hr />
+    <div class="bonus-part">
+      <label for="noOfButtonsToGenerate">Genereaza butoane</label><br />
+      <input type="number" name="noOfButtonsToGenerate" id="noOfButtonsToGenerate" />
+      <button type="button" onclick="generateBtn()">Genereaza</button><br /><br />
+      <div class="newButtons-area">
+        <!-- Created Buttons With JS -->
+      </div>
+      <p id="bonus-part-status"></p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
