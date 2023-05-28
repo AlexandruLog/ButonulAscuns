@@ -5,7 +5,6 @@ for (let i = 0; i < 3; ++i) {
 //setting a random button as "winner";
 document.getElementsByClassName("btn")[Math.floor(Math.random() * 3)].value = "Winner";
 
-//onclick functiion
 function checkBtn(position) {
   const firstPartMessage = document.getElementById("first-part-status");
   firstPartMessage.textContent =
