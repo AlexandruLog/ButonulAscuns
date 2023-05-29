@@ -14,6 +14,7 @@ function checkBtn(position) {
 //Bonus part
 function generateBtn() {
   const userInput = document.getElementById("noOfButtonsToGenerate").value;
+  document.querySelector(".newButtons-area").textContent = "";
   for (let i = 0; i < userInput; ++i) {
     const newButton = document.createElement("button");
     newButton.value = "Loser";
